@@ -1,0 +1,4 @@
+ollama
+streamlit
+sentence-transformers
+faiss-cpu
