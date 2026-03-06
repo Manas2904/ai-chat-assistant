@@ -1,28 +1,31 @@
-# 🧠 AI Assistant with Long-Term Memory (Local LLM)
+# AI Chat Assistant
 
-A ChatGPT-like AI assistant built using a local LLaMA-3 model with short-term conversational memory and long-term semantic memory.
+An AI-powered conversational assistant capable of understanding and responding to user queries using Natural Language Processing and Large Language Models.
 
-## 🚀 Features
-- Local LLM inference using Ollama (LLaMA-3)
-- Short-term conversational memory
-- Long-term semantic memory using FAISS
-- Memory-augmented prompt construction
-- Streamlit web interface
-- Modular, extensible architecture
+The assistant can simulate intelligent conversations and provide helpful responses.
 
-## 🛠 Tech Stack
-- Python 3.11
-- Ollama (LLaMA-3)
-- FAISS
-- Sentence Transformers
-- Streamlit
+## Features
 
-## ⚙️ Setup
-```bash
-git clone <repo-url>
-cd ai-chat-assistant
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-ollama run llama3
-streamlit run app.py
+- Conversational AI
+- Context-aware responses
+- Natural language understanding
+- LLM-powered responses
+- Interactive chat interface
+
+## Tech Stack
+
+- Python
+- NLP
+- Large Language Models
+- Streamlit / Web Interface
+
+## How It Works
+
+1. User enters a message
+2. The system processes the input using NLP
+3. The model generates a response
+4. The response is returned to the user
+
+## Installation
+
+Clone the repository
