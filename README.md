@@ -121,14 +121,17 @@ streamlit run app.py
 
 ### Home
 
+![Home Screen](screenshots/homepage.png)
 
+### Chat Conversation 1
 
-### Chat Conversation
+![Chat Conversation 1](screenshots/Firstchat.png)
 
-_Add screenshot here_
+### Chat Conversation 2
+
+![Chat Conversation 2](screenshots/Secondchat.png)
 
 ---
-
 ## Future Improvements
 
 - Streaming responses
