@@ -1,0 +1,62 @@
+# ============================================================================
+# AI Chat Assistant - Docker Compose Configuration
+# ============================================================================
+# Easy deployment using Docker Compose
+# ============================================================================
+
+version: '3.8'
+
+services:
+  ai-chat-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-chat-assistant
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      # Mount current directory for development (optional)
+      - .:/app
+      # Persist Streamlit configuration
+      - streamlit-data:/app/.streamlit
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    networks:
+      - ai-chat-network
+
+volumes:
+  streamlit-data:
+    driver: local
+
+networks:
+  ai-chat-network:
+    driver: bridge
+
+# ============================================================================
+# Usage Instructions
+# ============================================================================
+# Start the application:
+#   docker-compose up
+#
+# Start in detached mode:
+#   docker-compose up -d
+#
+# Stop the application:
+#   docker-compose down
+#
+# View logs:
+#   docker-compose logs -f
+#
+# Rebuild the image:
+#   docker-compose up --build
+#
+# Scale the application (if needed):
+#   docker-compose up --scale ai-chat-assistant=3
+# ============================================================================

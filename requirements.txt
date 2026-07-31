@@ -1,0 +1,35 @@
+# ============================================================================
+# AI Chat Assistant - Python Dependencies
+# ============================================================================
+# Core application dependencies
+# ============================================================================
+
+# Streamlit - Web framework for building the chat interface
+streamlit>=1.28.0
+
+# Google GenAI SDK - Official Python SDK for Google Gemini API
+google-genai>=0.3.0
+
+# python-dotenv - Environment variable management from .env files
+python-dotenv>=1.0.0
+
+# ============================================================================
+# Optional Development Dependencies
+# ============================================================================
+# Uncomment these if needed for development and testing
+
+# Testing framework
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# Code quality tools
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.5.0
+
+# Type stubs for better IDE support
+# types-requests>=2.31.0
+
+# Documentation
+# sphinx>=7.0.0
+# sphinx-rtd-theme>=1.3.0
